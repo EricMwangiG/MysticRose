@@ -30,6 +30,21 @@ body {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+
+.navbar-brand {
+    text-decoration: none; /* Removes underline from the link */
+    color: inherit; /* Inherits color from parent, or set a specific color like #fff */
+    display: flex; /* Ensures the logo and text stay together */
+    align-items: center; /* Vertically aligns logo and text */
+}
+
+/* You might also need to adjust styles for .nav-logo if it affects the link */
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between logo image and text */
+}
+
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -110,7 +125,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #0000ff 0%, #dc9292 100%);
     color: white;
     padding-top: 70px;
     overflow: hidden;
@@ -759,6 +774,11 @@ body {
     text-align: center;
     color: #94a3b8;
 }
+
+.hidden-resources {
+    display: none; /* This will completely hide the element */
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
